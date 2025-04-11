@@ -29,5 +29,19 @@ function fromDollarToYen(dollar) {
     return dollarToYen
 }
 
-console.log(fromDollarToYen(12));
+console.log(fromDollarToYen(3.5));
+
+module.exports = { sum, fromEuroToDollar, fromDollarToYen };
+
+function yenToPound(yen){
+let euros = 1 / oneEuroIs.JPY;
+let yenes = yen * euros;
+let pounds = yenes * oneEuroIs.GBP;
+
+return pounds;
+}
+
+console.log(yenToPound(1000));
+
+module.exports = { sum, fromEuroToDollar, fromDollarToYen, yenToPound };
 
