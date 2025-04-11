@@ -33,7 +33,7 @@ console.log(fromDollarToYen(3.5));
 
 module.exports = { sum, fromEuroToDollar, fromDollarToYen };
 
-function yenToPound(yen){
+function fromYenToPound(yen){
 let euros = 1 / oneEuroIs.JPY;
 let yenes = yen * euros;
 let pounds = yenes * oneEuroIs.GBP;
@@ -41,7 +41,7 @@ let pounds = yenes * oneEuroIs.GBP;
 return pounds;
 }
 
-console.log(yenToPound(1000));
+console.log(fromYenToPound(3.5));
 
-module.exports = { sum, fromEuroToDollar, fromDollarToYen, yenToPound };
+module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
 
